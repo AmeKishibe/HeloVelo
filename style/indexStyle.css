@@ -1,0 +1,51 @@
+/* @font-face {
+    font-family: 'Circular Std';
+    src: url("font/CircularStd-Black.ttf") format("ttf"), 
+    url("font/CircularStd-BlackItalic.ttf") format("ttf"),
+    url("font/CircularStd-Bold.ttf") format("ttf"),
+    url("font/CircularStd-BoldItalic.ttf") format("ttf"),
+    url("font/CircularStd-Book.ttf") format("ttf"),
+    url("font/CircularStd-BookItalic.ttf") format("ttf"),
+    url("font/CircularStd-Medium.ttf") format("ttf"),
+    url("font/CircularStd-MediumItalic.ttf") format("ttf"),
+    ;
+  } */
+
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+
+.header__navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3vw;
+    margin-right: 5vw;
+}
+
+.header__navbar a{ 
+    margin-top: 2vh;
+    font-family: 'Circular Std';
+    font-weight: bold;
+    font-size: 18px;
+    color: #2C2C2C;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    position: relative;
+  }
+  .header__navbar a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #EA9206;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .header__navbar a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
