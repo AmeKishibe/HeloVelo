@@ -15,29 +15,38 @@
 
 <body>
     <header class="header__navbar" id="header__navbar">
-        <a href=""><img src="/images/small-helovelo-png.png" alt="logoHéloVélo"></a>
+        <a href="#home__section"><img src="/images/small-helovelo-png.png" alt="logoHéloVélo"></a>
         <div class="header__navbar--btn">
-            <a href="#">QU'EST CE QUE HÉLO VÉLO</a>
-            <a href="#">POURQUOI UTILISER UN VÉLO</a>
-            <a href="#">COMMENT ÇA MARCHE</a>
-            <a href="#">L'ÉQUIPE</a>
+            <a href="#def__sectionID">QU'EST CE QUE HÉLO VÉLO</a>
+            <a href="#reason__section">POURQUOI UTILISER UN VÉLO</a>
+            <a href="#fonctionnement__section">COMMENT ÇA MARCHE</a>
+            <a href="#team__section">L'ÉQUIPE</a>
         </div>
     </header>
 
-    <section class="home__section">
+    <section class="home__section" id="home__section">
         <div class="home__section--box">
             <img src="/images/helovelo-png-home.png" alt="logoHéloVélo">
             <div class="home__section--paragraph">
-                <p>Hélo Vélo : Simple, Pratique, Rapide</p>
+                <p>Simple, Pratique, Rapide</p>
                 <p>Faire du vélo en toute sécurité !</p>
+                </br>
+                </br>
             </div>
-            <a href="#">C'est parti</a>
+            <a href="#video__section">C'est parti</a>
         </div>
 
     </section>
 
-    <section class="video__section">
+    <section class="video__section" id="video__section">
         <h2>Hélo Vélo en vidéo :</h2>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5toc_YYBYX4?controls=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        
     </section>
 
     <section id="def__sectionID" class="def__section">
@@ -49,20 +58,22 @@
                 provident rerum nulla.</p>
         </div>
     </section>
-    <section class="reason__section">
+
+    
+    <section class="reason__section" id="reason__section">
         <h2>Pourquoi utiliser un vélo ?</h2>
         <img src="images/raisons-background.png" alt="backgroundRaisons">
     </section>
 
-    <section class="fonctionnement__section">
+    <section class="fonctionnement__section" id="fonctionnement__section">
         <h2>Comment ça marche ?</h2>
         <p>Carte intéractive</p>
         <p>Carte intéractive</p>
         <p>Carte intéractive</p>
         <p>Carte intéractive</p>
-        <img src="images/helovelo-png.png" alt="logoHéloVélo">
+        <!-- <img src="images/helovelo-png.png" alt="logoHéloVélo"> -->
     </section>
-    <section class="team__section">
+    <section class="team__section" id="team__section">
         <div class="team__section--people">
             <img src="images/peole.png" alt="logoHéloVélo">
             <p>Nom Prénom</p>
