@@ -5,24 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/indexStyle.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+
     <title>HéloVélo</title>
 
 </head>
 
 <body>
-    <header class="header__navbar">
-        <a href="#">QU'EST CE QUE HÉLO VÉLO</a>
-        <a href="#">POURQUOI UTILISER UN VÉLO</a>
-        <a href="#">COMMENT ÇA MARCHE</a>
-        <a href="#">L'ÉQUIPE</a>
-
+    <header class="header__navbar" id="header__navbar">
+        <a href=""><img src="/images/small-helovelo-png.png" alt="logoHéloVélo"></a>
+        <div class="header__navbar--btn">
+            <a href="#">QU'EST CE QUE HÉLO VÉLO</a>
+            <a href="#">POURQUOI UTILISER UN VÉLO</a>
+            <a href="#">COMMENT ÇA MARCHE</a>
+            <a href="#">L'ÉQUIPE</a>
+        </div>
     </header>
+
     <section class="home__section">
-        <img href="images/HeloVeloPNG.png" alt="logoHéloVélo">
-        <p>Hélo Vélo : Simple, Pratique, Rapide</p>
-        <p>Faire du vélo en toute sécurité !</p>
-        <a href="#">C'est parti</a>
+        <div class="home__section--box">
+            <img src="/images/helovelo-png-home.png" alt="logoHéloVélo">
+            <div class="home__section--paragraph">
+                <p>Hélo Vélo : Simple, Pratique, Rapide</p>
+                <p>Faire du vélo en toute sécurité !</p>
+            </div>
+            <a href="#">C'est parti</a>
+        </div>
+
+    </section>
+
+    <section class="video__section">
+        <h2>Hélo Vélo en vidéo :</h2>
     </section>
 
     <section id="def__sectionID" class="def__section">
@@ -36,7 +51,7 @@
     </section>
     <section class="reason__section">
         <h2>Pourquoi utiliser un vélo ?</h2>
-        <img href="images/RaisonsBackground.png" alt="backgroundRaisons">
+        <img src="images/raisons-background.png" alt="backgroundRaisons">
     </section>
 
     <section class="fonctionnement__section">
@@ -45,31 +60,49 @@
         <p>Carte intéractive</p>
         <p>Carte intéractive</p>
         <p>Carte intéractive</p>
-        <img href="images/HeloVeloPNG.png" alt="logoHéloVélo">
+        <img src="images/helovelo-png.png" alt="logoHéloVélo">
     </section>
     <section class="team__section">
         <div class="team__section--people">
-            <img href="images/peole.png" alt="logoHéloVélo">
+            <img src="images/peole.png" alt="logoHéloVélo">
             <p>Nom Prénom</p>
         </div>
         <div class="team__section--people">
-            <img href="images/peole.png" alt="logoHéloVélo">
+            <img src="images/peole.png" alt="logoHéloVélo">
             <p>Nom Prénom</p>
         </div>
         <div class="team__section--people">
-            <img href="images/peole.png" alt="logoHéloVélo">
+            <img src="images/peole.png" alt="logoHéloVélo">
             <p>Nom Prénom</p>
         </div>
         <div class="team__section--people">
-            <img href="images/peole.png" alt="logoHéloVélo">
+            <img src="images/peole.png" alt="logoHéloVélo">
             <p>Nom Prénom</p>
         </div>
         <div class="team__section--people">
-            <img href="images/peole.png" alt="logoHéloVélo">
+            <img src="images/peole.png" alt="logoHéloVélo">
             <p>Nom Prénom</p>
         </div>
 
     </section>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("header__navbar");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+    </script>
+
+
 
 </body>
 

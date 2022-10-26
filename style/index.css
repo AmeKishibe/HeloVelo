@@ -1,0 +1,56 @@
+body{
+    height: 100%;
+}
+.home__section{
+    width: auto;
+    height: 1084px;
+
+    background-image: url("/images/velo-background.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.home__section--box{
+        margin-left: 5vw;
+}
+.home__section--box img{
+    visibility: visible;
+}
+.home__section--paragraph p{
+    font-family: "Gallant";
+    font-size: 40px;
+    margin: 0;
+}
+
+
+
+.home__section a{
+    border: solid 4px #FFA944;
+    text-decoration: none;
+    color: #2C2C2C;
+    border-radius: 150px;
+    padding: 2vh 3vw 2vh 3vw;
+    font-family: 'Circular Std Book';
+    font-size: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .home__section{
+        width: auto;
+        height: 1084px;
+        margin-left: 0;
+        background-image: url("/images/velo-background.png");
+        background-size: 75% ;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .home__section--box{
+        margin-left: 3vw;
+    }
+    .home__section--box img{
+        display: none;
+    }
+   
+    
+  
+  
+  }

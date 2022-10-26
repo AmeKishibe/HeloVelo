@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Gallant';
+    src: url("../font/Gallant/Gallantregular.otf") format("otf"), 
+    url("../font/Gallant/Gallantregular-italic.otf") format("otf"), 
+    url("../font/Gallant/Gallantbold.otf") format("otf"), 
+    url("../font/Gallant/Gallantbold-italic.otf") format("otf"), 
+    url("../font/Gallant/Gallantblack.otf") format("otf"), 
+    url("../font/Gallant/Gallantblack-italic.otf") format("otf"), 
+  } 
+
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+
+body{
+  margin: 0;
+}
+.header__navbar {
+  background: #FEFEFE;
+  padding: 1vh 0 1vh 0;
+}
+
+.sticky {
+  position: fixed;
+
+  width: 100%
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navbar img{
+  margin-left: 2vw;
+}
+
+.header__navbar--btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3vw;
+  margin-right: 5vw;
+}
+
+.header__navbar--btn a {
+  margin-top: 2vh;
+  font-family: 'Circular Std';
+  font-weight: bold;
+  font-size: 18px;
+  color: #2C2C2C;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  position: relative;
+}
+
+.header__navbar--btn a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #EA9206;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.header__navbar--btn a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+
+@media screen and (max-width: 500px) {
+  .header__navbar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .header__navbar--btn{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+  }
+  
+
+
+}
