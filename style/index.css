@@ -9,6 +9,11 @@ h2 {
     display: block;
 }
 
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
 .home__section {
     display: inline;
 
@@ -64,9 +69,6 @@ h2 {
     flex-direction: column;
 }
 
-.def__section {
-    gap: 50vw;
-}
 
 .def__section--paragraph {
     height: 1084px;
@@ -179,7 +181,8 @@ h2 {
     width: 100%;
     left: 0;
 }
-.team__section--people p{
+
+.team__section--people p {
     font-family: "Gallant";
     margin: 0;
     color: #2C2C2C;
@@ -253,4 +256,24 @@ h2 {
     .def__section--paragraph--P h3 {
         font-size: 32px;
     }
+
+    .reason__section--img img{
+        max-width: 110%;
+    }
+    .fonctionnement__section--img img{
+        max-width: 100%;
+        margin: 10vh 0 0 0 ;
+    }
+    .team__section{
+        flex-direction: column;
+    }
+    .team__section--people{
+        margin-bottom: 2vh;
+    }
+    iframe {
+        width: 360px;
+        height: 200px;
+    }
+
+
 }
