@@ -1,21 +1,23 @@
-body{
+body {
     height: 100%;
 }
 
-h2{
+h2 {
     font-family: "Circular Std";
     font-weight: bolder;
     font-size: 70px;
     display: block;
 }
-.home__section{
-   display: inline;
+
+.home__section {
+    display: inline;
 
     /* background-image: url("/images/velo-background.png");
     background-repeat: no-repeat;
     background-position: right; */
 }
-.home__section--box{
+
+.home__section--box {
     margin-left: 6vw;
     background-image: url("/images/velo-background.png");
     background-repeat: no-repeat;
@@ -24,11 +26,12 @@ h2{
     height: 140vh;
 }
 
-.home__section--box img{
+.home__section--box img {
     visibility: visible;
     margin-bottom: 5vh;
 }
-.home__section--paragraph p{
+
+.home__section--paragraph p {
     font-family: "Gallant";
     font-size: 35px;
     margin: 0;
@@ -36,7 +39,7 @@ h2{
 
 
 
-.home__section a{
+.home__section a {
     background-color: #FEFEFE;
     border: solid 4px #FFA944;
     text-decoration: none;
@@ -48,24 +51,24 @@ h2{
 }
 
 
-.video__section{
+.video__section {
     margin-left: 10vw;
     background-color: #FEFEFE;
-    
-    
+
+
 }
 
-.video{
+.video {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.def__section{
-    gap:50vw;
+.def__section {
+    gap: 50vw;
 }
 
-.def__section--paragraph{
+.def__section--paragraph {
     height: 1084px;
     background-image: url("/images/couple-background.png");
     background-repeat: no-repeat;
@@ -73,15 +76,16 @@ h2{
     margin: 0;
 }
 
-.def__section h2{
+.def__section h2 {
     margin-left: 10vw;
 }
 
-.def__section--paragraph p{
-    font-family:"Gallant";
+.def__section--paragraph p {
+    font-family: "Gallant";
     font-size: 20px;
 }
-.def__section--paragraph h3{
+
+.def__section--paragraph h3 {
     font-family: "Gallant";
     font-weight: bold;
     font-size: 35px;
@@ -96,60 +100,157 @@ h2{
     justify-content: flex-end;
 }
 
+.reason__section h2 {
+    margin: 0 0 5vh 10vw;
+}
+
+.reason__section--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reason__section--img img {
+    margin: 0 !important;
+    max-width: 60%;
+
+}
+
+.fonctionnement__section h2 {
+    z-index: 9;
+    margin: 0 0 -15vh 10vw;
+}
+
+.fonctionnement__section--img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fonctionnement__section--img img {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.team__part h2 {
+    margin-left: 10vw;
+}
+
+.team__section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15vh 7vw 30vh 7vw;
+}
+
+.team__section--people {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__section--people a {
+    margin-top: 3vh;
+    font-family: 'Circular Std';
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    position: relative;
+}
+
+.team__section--people a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #EA9206;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.team__section--people a:hover:after {
+    width: 100%;
+    left: 0;
+}
+.team__section--people p{
+    font-family: "Gallant";
+    margin: 0;
+    color: #2C2C2C;
+}
+
+
 
 @media screen and (max-width: 500px) {
-    .home__section{
+    .home__section {
         width: auto;
         height: 1084px;
         margin-left: 0;
-        background-size: 75% ;
-        
+        background-size: 75%;
+
     }
-    .home__section--box{
+
+    .home__section--box {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-size: 90% ;
+        background-size: 90%;
         margin-left: 3vw;
     }
-    .home__section--box img{
+
+    .home__section--box img {
         display: none;
     }
-    .home__section a{
+
+    .home__section a {
         font-size: 30px;
         margin-top: 3vh;
     }
-    
-    .home__section--paragraph p{
+
+    .home__section--paragraph p {
         font-weight: bold;
         display: flex;
         align-items: center;
 
     }
-    section{
+
+    section {
         margin-left: 7vw;
         margin-right: 5vw;
-    
+
     }
-    h2{
+
+    h2 {
         font-size: 50px;
     }
-    .home__section--paragraph{
+
+    .home__section--paragraph {
         margin-top: 3vh;
     }
 
-    .def__section{
+
+
+    .def__section {
         margin-left: 0;
 
     }
-    .def__section--paragraph{
-        background-size: 75% ;
+
+    .def__section--paragraph {
+        background-size: 75%;
     }
-    .def__section--paragraph--P{
+
+    .def__section--paragraph--P {
         margin-left: 7vw;
         margin-right: 7vw;
     }
-    .def__section--paragraph--P h3{
+
+    .def__section--paragraph--P h3 {
         font-size: 32px;
     }
-  }
+}

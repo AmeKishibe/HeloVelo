@@ -15,6 +15,7 @@ html {
 }
 
 body{
+  color: black;
   margin: 0;
 }
 .header__navbar {
