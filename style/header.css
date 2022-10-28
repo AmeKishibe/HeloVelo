@@ -92,7 +92,32 @@ body{
 
     justify-content: flex-start;
   }
+  body::-webkit-scrollbar {
+    display: none;
+  }
   
+  body::-webkit-scrollbar-track {
+    display: none; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    display: none;
+  }
 
 
+}
+
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(244, 244, 244); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(186, 186, 186); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgb(186, 186, 186); /* creates padding around scroll thumb */
 }
