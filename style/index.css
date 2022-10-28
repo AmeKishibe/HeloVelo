@@ -99,17 +99,15 @@ footer img {
 
     
 }
-
-.video__section {
+.video__section{background-color: #FEFEFE;}
+.video__section h2{
     margin-left: 10vw;
-    background-color: #FEFEFE;
-
-
 }
 
 .video {
     display: flex;
     align-items: center;
+
     flex-direction: column;
 }
 
